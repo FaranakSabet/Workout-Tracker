@@ -49,3 +49,11 @@ app.post("/api/workouts", async (req, res) => {
       })
       .catch((err) => res.status(400).json(err))
   })
+
+  // GET /workouts
+app.get("/api/workouts", async (req, res) => {
+    await db.Workout.find()
+      .sort({ day: 1 })
+      .then((result) => res.json(result))
+      .catch((err) => res.status(400).json(err))
+  })
