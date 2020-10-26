@@ -57,3 +57,13 @@ app.get("/api/workouts", async (req, res) => {
       .then((result) => res.json(result))
       .catch((err) => res.status(400).json(err))
   })
+
+// GET /workouts/range
+app.get("/api/workouts/range", async (req, res) => {
+    await db.Workout.find()
+      .then((result) => {
+        console.log(result)
+        res.json(result)
+      })
+      .catch((err) => res.status(400).json(err))
+  })
