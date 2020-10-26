@@ -10,3 +10,14 @@ A consumer will reach their fitness goals more quickly when they track their wor
 # App's image
 
 ![screenshot](https://user-images.githubusercontent.com/65681350/97131064-64972d00-1700-11eb-96f0-419160e3facd.PNG)
+
+
+## The URL to the deployed application:
+
+http://localhost:3000/?id=5f96027a6705522300989c9e
+
+## The URL to the GitHub repository
+
+https://github.com/FaranakSabet/Workout-Tracker
+
+
