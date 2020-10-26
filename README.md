@@ -5,3 +5,8 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 # Business Context
 
 A consumer will reach their fitness goals more quickly when they track their workout progress.
+
+
+# App's image
+
+![screenshot](https://user-images.githubusercontent.com/65681350/97131064-64972d00-1700-11eb-96f0-419160e3facd.PNG)
