@@ -67,3 +67,13 @@ app.get("/api/workouts/range", async (req, res) => {
       })
       .catch((err) => res.status(400).json(err))
   })
+
+  app.use("/exercise", (req, res, next) => {
+    console.log("hey me", req.query.id)
+    res.redirect("/exercise.html?id=" + req.query.id)
+    next()
+  })
+  
+  app.get("/stats", (req, res) => {
+    res.redirect("/stats.html")
+  })
