@@ -1,1 +1,15 @@
 const express = require("express")
+const app = express()
+const db = require("./models")
+const mongoose = require("mongoose")
+const dotenv = require("dotenv")
+const bodyParser = require("body-parser")
+
+dotenv.config()
+const app = express()
+const db = require("./models")
+const mongoose = require("mongoose")
+const dotenv = require("dotenv")
+const bodyParser = require("body-parser")
+
+dotenv.config()
