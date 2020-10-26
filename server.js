@@ -38,3 +38,14 @@ app.put("/api/workouts/:id", async (req, res) => {
       .then((result) => res.json(result))
       .catch((err) => res.status(400).json(err))
   })
+
+  // POST /workouts
+app.post("/api/workouts", async (req, res) => {
+    const workout = new Workout(req.body)
+    workout
+      .save()
+      .then((result) => {
+        res.json(workout)
+      })
+      .catch((err) => res.status(400).json(err))
+  })
